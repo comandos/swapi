@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('swapi');
+});
+
+Route::get('/swapi/{any?}', function () {
+    return view('swapi');
 });
